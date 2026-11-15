@@ -107,7 +107,7 @@ def plot_figure_1():
 
     ax.set_xlim(0, start_x + n_stages * (box_width + spacing))
     ax.set_ylim(0.5, 5.2)
-    plt.title("Figure 1: End-to-End System Architecture and Empirical Research Methodology", fontsize=11, weight="bold", pad=15)
+    plt.tight_layout()
     plt.savefig(os.path.join(FIG_DIR, "fig1_system_architecture.png"))
     plt.savefig(os.path.join(FIG_DIR, "fig1_system_architecture.pdf"))
     plt.close()
