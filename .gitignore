@@ -29,3 +29,4 @@ Thumbs.db
 # Agent & Brain internal logs
 .system_generated/
 scratch/
+paper.zip

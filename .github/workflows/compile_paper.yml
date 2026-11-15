@@ -1,0 +1,29 @@
+name: Build Academic Paper PDF
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'paper/**'
+      - '.github/workflows/compile_paper.yml'
+  workflow_dispatch:
+
+jobs:
+  build-latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX Document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          working_directory: paper
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
+
+      - name: Upload PDF Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Bangladesh_Climate_Crop_Yield_Paper
+          path: paper/main.pdf
