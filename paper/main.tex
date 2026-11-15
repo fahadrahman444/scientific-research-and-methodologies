@@ -225,13 +225,13 @@ where $F$ is the complete feature space, and $S$ represents feature subsets excl
 
 \section{Experimental Results and Discussion}
 \subsection{Statistical Trend Detection (RQ1)}
-The non-parametric Mann-Kendall test over the 15-year period reveals statistically significant climatic shifts across Bangladesh. Minimum temperature ($T_{\min}$) exhibits a pronounced upward trend ($Z_S = +2.48, p = 0.013, \beta = +0.038^\circ\text{C/yr}$), confirming an accelerated night-time warming regime. Annual heat stress days ($HSD$) also increase significantly ($Z_S = +2.61, p = 0.009, \beta = +0.64\text{ days/yr}$). Conversely, total precipitation shows high inter-annual volatility without a monotonic linear trend ($Z_S = -0.78, p = 0.435$), reflecting erratic monsoon distribution patterns.
+The non-parametric Mann-Kendall test over the 15-year period reveals statistically significant climatic shifts across Bangladesh, exactly matching our exploratory statistical notebooks. Minimum temperature ($T_{\min}$) exhibits a pronounced upward warming trend ($Z_S = +3.962, p < 0.001, \beta = +0.123^\circ\text{C/yr}$), confirming an accelerated night-time warming regime. Annual heat stress days ($HSD$) also increase significantly ($Z_S = +3.017, p = 0.0026, \beta = +1.31\text{ days/yr}$). Similarly, mean temperature displays an upward trend ($Z_S = +3.827, p < 0.001, \beta = +0.125^\circ\text{C/yr}$). Conversely, total precipitation shows high inter-annual volatility without a monotonic linear trend ($Z_S = +1.576, p = 0.115, \beta = +21.33\text{ mm/yr}$), reflecting erratic monsoon swings rather than uniform drying or wetting. Regional divisional analysis further confirms significant warming slopes in Dhaka ($+0.057^\circ\text{C/yr}$), Chittagong ($+0.051^\circ\text{C/yr}$), and Rangpur ($+0.024^\circ\text{C/yr}$).
 
 \subsection{Comparative Model Performance (RQ2 \& RQ3)}
 The empirical evaluation on the blind out-of-sample test horizon (2022--2024) is summarized in Table~\ref{tab:results}. Fig.~\ref{fig:model_eval} illustrates the predictive trajectories, evaluation metrics, and residual distributions.
 
 \begin{table}[htbp]
-\caption{Model Evaluation on Out-of-Sample Test Horizon (2022--2024)}
+\caption{Tier 1 National Model Evaluation on Out-of-Sample Test Horizon (2022--2024)}
 \begin{center}
 \begin{tabular}{lccccc}
 \toprule
@@ -256,7 +256,9 @@ PyTorch LSTM (3-Yr) & 0.918 & 95.4 & 79.1 & 1.56 & 0.959 \\
 \label{fig:model_eval}
 \end{figure*}
 
-As demonstrated in Table~\ref{tab:results}, gradient boosted tree ensembles decisively outperform the linear Ridge baseline. Ridge regression yielded an $R^2$ of 0.812 and an RMSE of $142.6\text{ kg/ha}$. In contrast, XGBoost achieved the highest predictive fidelity with an $R^2$ of 0.941, an RMSE of $84.2\text{ kg/ha}$, an MAE of $68.3\text{ kg/ha}$, and a Mean Absolute Percentage Error of only $1.35\%$. The deep temporal LSTM network also exhibited strong sequential tracking ($R^2 = 0.918$, $\text{RMSE} = 95.4\text{ kg/ha}$), indicating that multi-year rolling memory features effectively capture cumulative soil moisture stress.
+As demonstrated in Table~\ref{tab:results}, gradient boosted tree ensembles decisively outperform the linear Ridge baseline for Tier 1 national yield forecasting. Ridge regression yielded an $R^2$ of 0.812 and an RMSE of $142.6\text{ kg/ha}$. In contrast, XGBoost achieved the highest predictive fidelity with an $R^2$ of 0.941, an RMSE of $84.2\text{ kg/ha}$, an MAE of $68.3\text{ kg/ha}$, and a Mean Absolute Percentage Error of only $1.35\%$. The deep temporal LSTM network also exhibited strong sequential tracking ($R^2 = 0.918$, $\text{RMSE} = 95.4\text{ kg/ha}$), indicating that multi-year rolling memory features effectively capture cumulative soil moisture stress.
+
+In parallel, our Tier 2 sub-national multi-crop experiments executed in Colab Notebook 03 ($n = 768$ division-stratified records across 6 major crops) confirm that tree-based ensembles maintain outstanding predictive generalization across diverse agro-ecological zones: Random Forest achieved $R^2 = 0.9968$ ($\text{RMSE} = 0.396\text{ MT/ha}$), closely mirrored by XGBoost ($R^2 = 0.9967$, $\text{RMSE} = 0.403\text{ MT/ha}$), LightGBM ($R^2 = 0.9960$), and CatBoost ($R^2 = 0.9949$), all heavily outperforming the linear baseline ($R^2 = 0.9905$, $\text{RMSE} = 0.683\text{ MT/ha}$).
 
 \subsection{TreeSHAP Attribution and Physiological Stress Bounds (RQ4)}
 Fig.~\ref{fig:shap_importance} illustrates the global TreeSHAP feature importance ranking and directional beeswarm distributions for the best-performing XGBoost model.
