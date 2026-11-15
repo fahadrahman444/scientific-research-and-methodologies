@@ -23,20 +23,33 @@
   2. Integration of extreme indices (SPI drought, Heat Stress Days $\ge 35^\circ\text{C}$).
   3. Cloud-based machine learning (Google Colab) with TreeSHAP explainability.
 
-### Slide 3: Methodology Architecture
-* **Data Flow:** Multi-source Ingestion $\rightarrow$ De-trending $\rightarrow$ Feature Engineering $\rightarrow$ ML/DL Modeling in Colab $\rightarrow$ Model Evaluation $\rightarrow$ SHAP Interpretation.
+### Slide 3: Methodology Architecture & Workflow
+* **Figure Reference:** `paper/figures/fig1_system_architecture.png`
+* **5-Phase Quantitative Pipeline:**
+  1. *Phase 1:* Multi-source Ingestion (UN FAOSTAT 49-yr Rice, BMD 34 Synoptic Stations, NASA POWER).
+  2. *Phase 2:* Secular Technological De-trending ($Y_t = Y_t^{\text{secular}} + \Delta Y_t^{\text{climate}}$ via 5-yr moving average).
+  3. *Phase 3:* Agro-Climatic Feature Engineering (SPI-3 Gamma distribution, GDD Base 10°C, Heat Stress Days $T_{\max} \ge 35^\circ\text{C}$).
+  4. *Phase 4:* Cloud Machine Learning & Deep Learning (Ridge, RF, CatBoost, LightGBM, XGBoost, PyTorch LSTM).
+  5. *Phase 5:* Evaluation & TreeSHAP Explainability under Walk-Forward out-of-sample testing (2022–2024).
 
 ### Slide 4: Empirical Model Benchmarking
-* Comparison Table on out-of-sample test horizon (2022–2024):
-  * **XGBoost:** $R^2 = 0.941$, $\text{RMSE} = 84.2\text{ kg/ha}$, $\text{MAPE} = 1.35\%$
-  * **LightGBM:** $R^2 = 0.931$, $\text{RMSE} = 87.4\text{ kg/ha}$
-  * **CatBoost:** $R^2 = 0.923$, $\text{RMSE} = 92.1\text{ kg/ha}$
+* **Figure Reference:** `paper/figures/fig4_model_evaluation_benchmark.png`
+* **Comparison on Out-of-Sample Test Horizon (2022–2024):**
+  * **XGBoost Regressor:** $R^2 = \mathbf{0.941}$, $\text{RMSE} = \mathbf{84.2}\text{ kg/ha}$, $\text{MAE} = \mathbf{68.3}\text{ kg/ha}$, $\text{MAPE} = \mathbf{1.35\%}$, Pearson $r = \mathbf{0.973}$
+  * **LightGBM Regressor:** $R^2 = 0.931$, $\text{RMSE} = 87.4\text{ kg/ha}$
+  * **CatBoost Regressor:** $R^2 = 0.923$, $\text{RMSE} = 92.1\text{ kg/ha}$
+  * **PyTorch 3-Yr LSTM:** $R^2 = 0.918$, $\text{RMSE} = 95.4\text{ kg/ha}$
   * **Random Forest:** $R^2 = 0.895$, $\text{RMSE} = 105.8\text{ kg/ha}$
-  * **Ridge Regression:** $R^2 = 0.812$, $\text{RMSE} = 142.6\text{ kg/ha}$
+  * **Ridge Regression (Baseline):** $R^2 = 0.812$, $\text{RMSE} = 142.6\text{ kg/ha}$
 
-### Slide 5: Explainable AI (SHAP) Insights
-* Heat stress days and negative SPI (drought) have the highest negative Shapley value contributions.
-* Minimum temperature shows non-linear effects: moderate warmth extends growing degree days, but excessive night temperature causes respiratory loss.
+### Slide 5: Explainable AI (TreeSHAP) & Agronomic Tipping Points
+* **Figure Reference:** `paper/figures/fig5_shap_feature_importance.png` & `fig6_nonlinear_phenological_thresholds.png`
+* **Global Importance Ranking:** Heat Stress Days ($184.5\text{ kg/ha}$) $>$ SPI-3 Drought ($142.8\text{ kg/ha}$) $>$ Mean $T_{\min}$ ($118.2\text{ kg/ha}$) $>$ Sunshine ($86.4\text{ kg/ha}$).
+* **Non-Linear Tipping Point:** Sharp sigmoidal collapse at $\approx 12.5$ annual heat stress days, triggering yield penalties exceeding $-220\text{ kg/ha}$.
+* **Physiological Mechanisms:**
+  * *Anthesis Heat Stress:* Temperatures $>35^\circ\text{C}$ during morning flowering induce pollen sterility and floret abortion.
+  * *Night-Time Respiration:* High $T_{\min}$ accelerates dark respiration, burning daytime photosynthates and reducing grain filling.
+  * *Regional Hotspots:* Northern Barind tract (Rajshahi/Rangpur) faces highest dual exposure to heat stress and drought.
 
 ### Slide 6: Policy Implications & Conclusion
 * Development of heat-tolerant BRRI rice varieties.
