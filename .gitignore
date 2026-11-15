@@ -1,0 +1,31 @@
+# Media & Video files (>100MB rejected by GitHub)
+*.wmv
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Python & Environment
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+venv/
+env/
+ENV/
+.venv/
+
+# Jupyter / Colab Checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Agent & Brain internal logs
+.system_generated/
+scratch/
