@@ -1,8 +1,12 @@
 # Week 14: Final Defense & Viva Voce Slide Deck and Question Bank
 
 **Course:** CSE 418: Scientific Research and Methodologies Lab (Spring 2026)  
-**Instructor:** Tahmina Islam (Lecturer, Department of CSE, UITS)  
-**Author:** Fahad Rahman  
+**Instructor / Supervisor:** Tahmina Islam (Lecturer, Department of CSE, UITS)  
+**Research Team:**
+* Fahad Rahman (ID: 043232000510107, Email: fahadrahman396@gmail.com)
+* Shafayat Hossain Shafin (ID: 0432320005101088)
+* Zannatul Nayeem (ID: 0432320005101063)
+* Reon Ahmed (ID: 0432320005101066)  
 **Research Title:** A Data-Driven Analysis of 15-Year Weather Variability and Its Impact on Agricultural Crop Yield in Bangladesh  
 
 ---
@@ -11,7 +15,12 @@
 
 ### Slide 1: Research Title & Credentials
 * **Title:** A Data-Driven Analysis of 15-Year Weather Variability and Its Impact on Agricultural Crop Yield in Bangladesh
-* **Author:** Fahad Rahman (ID: B.Sc in CSE, Year 4, Semester 1)
+* **Authors (Research Team):**
+  * Fahad Rahman (043232000510107) - Lead / Correspondent
+  * Shafayat Hossain Shafin (0432320005101088)
+  * Zannatul Nayeem (0432320005101063)
+  * Reon Ahmed (0432320005101066)
+* **Program:** B.Sc in CSE (Year 4, Semester 1), University of Information Technology and Sciences (UITS)
 * **Course:** CSE 418: Scientific Research and Methodologies Lab
 * **Supervisor:** Tahmina Islam, Lecturer, Department of CSE, UITS
 

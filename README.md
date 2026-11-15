@@ -9,6 +9,13 @@
 
 An end-to-end, reproducible empirical research repository for **CSE 418: Scientific Research and Methodologies Lab** at the **University of Information Technology and Sciences (UITS)**, guided by **Lecturer Tahmina Islam**.
 
+### 👥 Research Team & Authors
+* **Fahad Rahman** (Lead / Correspondent) — ID: `043232000510107` | Email: `fahadrahman396@gmail.com`
+* **Shafayat Hossain Shafin** — ID: `0432320005101088`
+* **Zannatul Nayeem** — ID: `0432320005101063`
+* **Reon Ahmed** — ID: `0432320005101066`
+* **Academic Supervisor:** Lecturer Tahmina Islam, Department of CSE, UITS
+
 ---
 
 ## 📌 Executive Summary

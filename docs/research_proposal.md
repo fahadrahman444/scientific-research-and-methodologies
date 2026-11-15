@@ -1,7 +1,11 @@
 # Research Proposal: A Data-Driven Analysis of 15-Year Weather Variability and Its Impact on Agricultural Crop Yield in Bangladesh
 
 **Course:** CSE 418: Scientific Research and Methodologies Lab  
-**Author / Student:** Fahad Rahman  
+**Research Team:**
+* Fahad Rahman (ID: 043232000510107, Email: fahadrahman396@gmail.com)
+* Shafayat Hossain Shafin (ID: 0432320005101088)
+* Zannatul Nayeem (ID: 0432320005101063)
+* Reon Ahmed (ID: 0432320005101066)  
 **Supervisor / Instructor:** Tahmina Islam, Lecturer, Department of CSE, UITS  
 **Repository:** [https://github.com/fahadrahman444/scientific-research-and-methodologies](https://github.com/fahadrahman444/scientific-research-and-methodologies)
 

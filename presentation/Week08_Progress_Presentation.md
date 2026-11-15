@@ -1,8 +1,12 @@
 # Week 08: Research Progress Presentation Slide Deck
 
 **Course:** CSE 418: Scientific Research and Methodologies Lab (Spring 2026)  
-**Instructor:** Tahmina Islam (Lecturer, Department of CSE, UITS)  
-**Presenter:** Fahad Rahman  
+**Instructor / Supervisor:** Tahmina Islam (Lecturer, Department of CSE, UITS)  
+**Research Team:**
+* Fahad Rahman (043232000510107, fahadrahman396@gmail.com)
+* Shafayat Hossain Shafin (0432320005101088)
+* Zannatul Nayeem (0432320005101063)
+* Reon Ahmed (0432320005101066)  
 **Research Title:** A Data-Driven Analysis of 15-Year Weather Variability and Its Impact on Agricultural Crop Yield in Bangladesh  
 **Repository:** [https://github.com/fahadrahman444/scientific-research-and-methodologies](https://github.com/fahadrahman444/scientific-research-and-methodologies)
 
@@ -10,7 +14,7 @@
 
 ## Slide 1: Title & Overview
 * **Title:** A Data-Driven Analysis of 15-Year Weather Variability and Its Impact on Agricultural Crop Yield in Bangladesh
-* **Student:** Fahad Rahman (B.Sc in CSE, Year 4, Semester 1)
+* **Authors (Research Team):** Fahad Rahman, Shafayat Hossain Shafin, Zannatul Nayeem, Reon Ahmed
 * **Supervisor:** Tahmina Islam, Lecturer, Department of CSE, UITS
 * **Core Paradigm:** Quantitative Empirical Research (Creswell, 5th Ed.)
 
