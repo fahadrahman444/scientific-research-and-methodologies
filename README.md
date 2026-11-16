@@ -16,6 +16,10 @@ An end-to-end, reproducible empirical research repository for **CSE 418: Scienti
 * **Reon Ahmed** — ID: `0432320005101066`
 * **Academic Supervisor:** Lecturer Tahmina Islam, Department of CSE, UITS
 
+### 📖 Essential Guides & Documentation
+* 🚀 **[Non-Technical Plain-English Overview](docs/NON_TECHNICAL_PROJECT_OVERVIEW.md)**: Problem, findings, why/how, and conclusion explained in simple language.
+* 🎓 **[Presentation Cheat Sheet & Viva Voce Q&A Bank](docs/PRESENTATION_CHEATSHEET_AND_PAPER_BRIEF.md)**: Slide-by-slide scripts, critical numbers, and supervisor defense answers.
+
 ---
 
 ## 📌 Executive Summary
@@ -116,6 +120,8 @@ scientific-research-and-methodologies/
 │   └── syllabus_summary.md                            <- Complete 14-week course syllabus & CIE assessment guide
 │
 ├── docs/                                               <- Scientific specifications & methodologies
+│   ├── NON_TECHNICAL_PROJECT_OVERVIEW.md              <- Plain-English guide (Problem, Why/How, Findings, Policy)
+│   ├── PRESENTATION_CHEATSHEET_AND_PAPER_BRIEF.md      <- Slide-by-slide script & Viva Voce Q&A defense bank
 │   ├── creswell_methodology_guide.md                   <- Quantitative worldview, variables, validity & ethics
 │   ├── research_proposal.md                           <- Formal proposal (Objectives, RQs, Hypotheses)
 │   ├── methodology_framework.md                       <- Mathematical formulations (Mann-Kendall, SPI, GDD, ML)
