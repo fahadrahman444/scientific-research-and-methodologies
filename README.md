@@ -17,6 +17,7 @@ An end-to-end, reproducible empirical research repository for **CSE 418: Scienti
 * **Academic Supervisor:** Lecturer Tahmina Islam, Department of CSE, UITS
 
 ### 📖 Essential Guides & Documentation
+* 🌳 **[How XGBoost Works (Easy Guide & Word Doc)](docs/HOW_XGBOOST_WORKS_EASY_GUIDE.md)** ([Word .docx](docs/HOW_XGBOOST_WORKS_EASY_GUIDE.docx)): Simple, minimal explanation of how XGBoost works in this paper.
 * 🚀 **[Non-Technical Plain-English Overview](docs/NON_TECHNICAL_PROJECT_OVERVIEW.md)**: Problem, findings, why/how, and conclusion explained in simple language.
 * 🎓 **[Presentation Cheat Sheet & Viva Voce Q&A Bank](docs/PRESENTATION_CHEATSHEET_AND_PAPER_BRIEF.md)**: Slide-by-slide scripts, critical numbers, and supervisor defense answers.
 
@@ -120,6 +121,8 @@ scientific-research-and-methodologies/
 │   └── syllabus_summary.md                            <- Complete 14-week course syllabus & CIE assessment guide
 │
 ├── docs/                                               <- Scientific specifications & methodologies
+│   ├── HOW_XGBOOST_WORKS_EASY_GUIDE.md                <- Plain-words XGBoost explanation (Markdown)
+│   ├── HOW_XGBOOST_WORKS_EASY_GUIDE.docx              <- Plain-words XGBoost explanation (Word Doc)
 │   ├── NON_TECHNICAL_PROJECT_OVERVIEW.md              <- Plain-English guide (Problem, Why/How, Findings, Policy)
 │   ├── PRESENTATION_CHEATSHEET_AND_PAPER_BRIEF.md      <- Slide-by-slide script & Viva Voce Q&A defense bank
 │   ├── creswell_methodology_guide.md                   <- Quantitative worldview, variables, validity & ethics
